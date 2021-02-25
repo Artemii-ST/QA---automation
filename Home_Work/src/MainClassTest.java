@@ -3,11 +3,11 @@ import org.junit.Test;
 
 public class MainClassTest {
     @Test
-    public void test()
-        {
-            MainClass mainClass = new MainClass();
-        int value = mainClass.getLocalNumber();
-        Assert.assertTrue("getLocalNumber != 14",value == 14);
+    public void testGetClassNumber()
+    {
+        MainClass mainClass = new MainClass();
+        int x = mainClass.getClassNumber();
+        Assert.assertTrue("metod getClassNumber return value < 45",x > 45);
     }
 
 
