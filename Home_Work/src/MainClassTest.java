@@ -3,11 +3,12 @@ import org.junit.Test;
 
 public class MainClassTest {
     @Test
-    public void testGetClassNumber()
+    public void testGetClassString()
     {
-        MainClass mainClass = new MainClass();
-        int x = mainClass.getClassNumber();
-        Assert.assertTrue("metod getClassNumber return value < 45",x > 45);
+        String x = new MainClass().getClassString();
+        String find = "Hello";
+        String find1 = "hello";
+        Assert.assertTrue("Method getClassString do not has Value : Hello or hello",x.contains(find) || x.contains(find1));
     }
 
 
